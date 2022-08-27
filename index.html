@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encriptador de Texto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Encriptador/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Encriptador/Style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="Script.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="../Encriptador/Logo_Alura2.png" alt="">
+    </header>
+
+    <main>
+
+        <section class="PanelIzquierdo">
+
+            <textarea id="InputText" class="TextInput" type="mensaje" cols="50" rows="10" placeholder="ingrese el texto aqui"></textarea>
+            
+            <div class="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="BotonesPanelIzquierdo">
+                <button id="btn1" class="btn1" onclick="encriptar()">Encriptar!</button>
+                <button id="btn2" class="btn2" onclick="desencriptar()">Desencriptar!</button>
+            </div>
+
+        </section>
+
+        <section class="PanelDerecho">
+
+            <div class="ContainerImg">
+                <img src="../Encriptador/Muñeco2.png" id="ImgDer" class="ImgDer">
+                <p class="T1" id="T1">Ningún mensaje fue encontrado</p>
+                <p class="T2" id="T2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea name="" id="Text_2" class="Text_2" cols="30" rows="10"></textarea>
+                
+            </div>
+                
+            <input type="submit" value="Copiar" name="" id="btn3" class="btn3" onclick="copiar()">
+
+        </section>
+        
+    </main>
+    <div id="espacio" style="color: #fbfbfd;">vacio</div>
+        
+    <footer class="Abajo">&copy Developed by Joimer A. Arcila Herrera</footer>
+   
+
+ </body>
+</html>

@@ -1,0 +1,268 @@
+body{
+    box-sizing:border-box;
+    background-color:#fbfbfd;
+	font-family: 'Montserrat', sans-serif;
+	}
+
+header{
+    display: flex;
+    width: 83.5%;
+    height: auto;
+    margin-top: 3.45em;
+    margin-left: 6em;
+    margin-right: 0;
+ 	}
+
+ 	header img{
+	width: 10%;
+	}
+
+main{
+	display: flex;
+	flex-direction: row;
+	}
+
+	.PanelIzquierdo{
+		display: inline-block;
+		flex-direction: column;
+		width: 65%;
+		height: 46em;
+		margin-left: 5.5em;
+		border-radius: 12px;
+		}
+
+	.TextInput{
+		margin-top: 7%;
+		width: 80%;
+		height: 50%;
+		border: none;
+		color: black;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 1.5em;
+		padding: 1em;
+		background-color: transparent;
+		margin: auto;
+		margin-top: 3em;
+		margin-left: 2em;
+		resize: none;
+		outline: none;		
+	}
+
+	.TextInput::placeholder{
+		color:black;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+		}
+
+	.alerta{
+		display: flex;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 10%;
+		}
+	
+	.alerta p{
+		width: 100%;
+		color: black;
+		text-align: left;
+		font-size: 1.2em;
+		}
+
+	.alerta p::before{
+		content: url(../Encriptador/Alerta.png);
+		padding-right: 0.5em;
+		}
+
+	.BotonesPanelIzquierdo{
+		display: flex;
+		flex-direction: row;
+		width: 76%;
+		margin: auto;
+		margin-top: 2%; 
+		justify-content: center;
+		text-align: center;
+		} 
+
+	.btn1, .btn2{
+		display:inline;
+		width:12em;
+		height: 3.5em;        
+		background-color: #27262c;
+		border:none;
+		border-radius: 1.2em;
+		margin-right: 1.5em;
+		cursor: pointer;
+		color: white;
+		font-weight: bold;
+		margin-bottom: 1em;
+		text-align: center;
+		transition: 0.2s;
+		box-shadow: 1px 2px 2px rgb(94, 91, 91);
+		}
+
+	.btn1:hover{
+		background: #eaeaea;
+		transform: scale(1.1);
+		color: black;
+		}
+	
+	.btn2:hover{
+		background: #eaeaea;
+		transform: scale(1.1);
+		color: black;
+		}
+
+	.PanelDerecho{
+		display: inline;
+		flex-direction: column;
+		width: 25%;
+		height: 46em;
+		border: solid 1px black;
+		border-radius: 12px;
+		margin: 5px;
+		margin-right: 2em;
+		margin-top: 0.6px;
+		text-align: center;
+		}
+
+		.ContainerImg{
+			width: auto;
+			height: 83%;
+			margin: auto;
+			text-align: center;
+		}
+
+		.ContainerImg img{
+			width: auto;
+			scale: 85%;
+			margin-top: 40%;
+		}
+
+		.T1{
+			font-size: 1.6em;
+			font-weight: bold;
+			margin: 1.2em;
+		}
+
+		.T2{
+			font-size: 1.3em;
+		}
+
+		#Text_2{
+			display: none;
+			width: 98%;
+			height: 35em;
+			font-size: 1.3em;
+			resize: none;
+			outline: none;
+			text-align: center;
+			background-color: transparent;
+			border: none;
+			resize: none;
+			outline: none;		
+		}
+
+		#btn3{
+			display:none;
+			width:10em;
+			height: 3.5em;        
+			background-color: #27262c;
+			border:none;
+			border-radius: 1.2em;
+			margin-right: 1.5em;
+			cursor: pointer;
+			color: white;
+			font-weight: bold;
+			margin-bottom: 1em;
+			margin-top: 3.5em;
+			text-align: center;
+			transition: 0.2s;
+			box-shadow: 1px 2px 2px rgb(94, 91, 91);
+		}
+
+		#btn3:hover{
+			background: #eaeaea;
+			transform: scale(1.1);
+			color: black;
+		}
+
+		.Abajo{	
+			height: 57px;
+			background: url(../Encriptador/bg.jpg);
+			color: #cac8c9;
+			text-align: left;
+		}
+
+		@media only screen and (max-width: 700px){
+			
+			main{
+				display: flex;
+				width: auto;
+				height: auto;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+			}
+
+				header{
+					margin: auto;
+				}
+			
+				header img{
+					width: 30%;
+				}
+
+				.PanelIzquierdo, .BotonesPanelIzquierdo{
+					display: flex;
+					flex-direction: column;
+					margin: auto;
+					margin-top: auto;
+					width: 95%;
+					height: auto;			   
+				}
+
+					.btn1, .btn2{
+						width: 100%;
+						margin: auto;
+						margin-bottom: 2em;
+					}
+
+					.TextInput{
+						font-size: 100%;
+						margin: 0;
+						margin-top: 10%;
+						width: auto;
+					}
+
+				.PanelDerecho{
+					margin-left: 27px;
+					width: auto;
+					height:auto;
+				}
+
+						.ContainerImg{
+							width: auto;
+						}
+
+						.ContainerImg img{
+							width: auto;
+							display: none;
+							margin: none;
+						}
+
+						.btn3{
+							width: auto;
+							height: auto;
+							margin: auto;
+						}
+						
+						#Text_2{
+							height: auto;
+							margin: 0;
+							margin-top: 1em;
+							margin-bottom: 1em;
+						}
+			
+}
